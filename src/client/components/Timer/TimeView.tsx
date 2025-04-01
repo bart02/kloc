@@ -36,8 +36,7 @@ export function TimeView() {
       <TimeViewBase id="timer">
         {hh !== '00' && `${hh} : `}
         {(hh !== '00' || mm !== '00') && `${mm} : `}
-        {(hh !== '00' || mm !== '00' || ss !== '00') && `${ss} : `}
-        {ms}
+        {ss}
       </TimeViewBase>
       <DestinationPreview
         destination={destination}

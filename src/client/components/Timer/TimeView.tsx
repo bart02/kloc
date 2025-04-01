@@ -11,11 +11,10 @@ export function TimeView() {
     context: { remaining: time, duration: maxValue, destination },
   } = timer
   const date = new Date(time)
-  const [hh, mm, ss, ms] = [
+  const [hh, mm, ss] = [
     date.getUTCHours(),
     date.getUTCMinutes(),
     date.getUTCSeconds(),
-    Math.floor(date.getUTCMilliseconds() / 10),
   ].map(prefixZero)
 
   return (
